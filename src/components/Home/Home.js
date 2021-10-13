@@ -27,7 +27,7 @@ const Home = () => {
           <div className="home__btn-container">
             <button className="home__button">Learn More</button>
             <IoIosReturnRight />
-            <p>Learn About our Latest work intro</p>
+            <p>Learn about our Latest work intro</p>
           </div>
         </div>
       </Container>
