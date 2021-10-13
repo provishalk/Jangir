@@ -1,0 +1,90 @@
+.about {
+  min-height: 100vh;
+  &__container {
+    background-image: url("../../img/conversation.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 35%;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+    h1 {
+      width: 50%;
+      text-align: center;
+    }
+  }
+  &__content {
+    width: 40%;
+    margin-top: 4rem;
+    margin-left: 15%;
+    &__body {
+      margin-top: 3rem;
+      p {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 8px;
+    width: 10rem;
+    border-radius: 18px;
+    margin-top: 2rem;
+    &:active {
+      font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about {
+    &__container {
+      background-image: none;
+    }
+    header {
+      h1 {
+        width: 100%;
+      }
+    }
+    &__content {
+      width: 60%;
+      margin: auto;
+      margin-top: 4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    header {
+      padding-top: 8px;
+      h1 {
+        width: 100%;
+      }
+    }
+    &__content {
+      width: 80%;
+      margin: auto;
+      margin-top: 2rem;
+      &__body {
+        margin-top: 2rem;
+        p {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    button {
+      margin-top: 1rem;
+    }
+  }
+}

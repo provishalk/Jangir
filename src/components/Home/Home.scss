@@ -1,0 +1,97 @@
+.home {
+  background-color: #f0f0fc;
+  &__background-img {
+    background-image: url("../../img/Snowflake.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 50%;
+    min-height: 100vh;
+  }
+  &__left-panel {
+    width: 50%;
+    padding: 1rem;
+    transition: 10ms;
+    h1 {
+      font-size: 4rem;
+      transition: 1s;
+    }
+    h5 {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    p{
+      margin-top: 1.5rem;
+    }
+    padding-top: 4rem;
+  }
+  &__btn-container {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    button {
+      padding: 8px;
+      width: 10rem;
+      border-radius: 18px;
+      background-color: #5453f9;
+      border: none;
+      color: white;
+    }
+    button:active {
+      background-color: #4141ff;
+    }
+    p {
+      margin: 0;
+      align-self: flex-end;
+      width: 8rem;
+      margin-top: 2rem;
+      color: #f89663;
+    }
+    svg {
+      width: 6rem;
+      height: 3rem;
+      margin-top: 24px;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .home {
+    &__left-panel {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home {
+    &__left-panel {
+      h1 {
+        font-size: 2rem;
+      }
+      h5 {
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home {
+    &__background-img {
+      background-image: none;
+    }
+    &__left-panel {
+      width: 100%;
+      h1 {
+        font-size: 2rem;
+      }
+      h5 {
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+  }
+}

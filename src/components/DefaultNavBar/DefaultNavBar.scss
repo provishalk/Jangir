@@ -1,0 +1,24 @@
+.navbar{
+  &__logo{
+    width: 8rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navbar{
+    &__get-in-touch{
+      background-color: black;
+      border-radius: 18px;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+      color: white !important;
+      margin-right: 4px;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar{
+    &__get-in-touch{
+      color: #737373 !important;
+    }
+  }
+}

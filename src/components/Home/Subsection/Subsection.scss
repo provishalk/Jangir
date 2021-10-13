@@ -1,0 +1,60 @@
+.subsection {
+  min-height: 60vh;
+  background: rgb(246, 248, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(246, 248, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 73%
+  );
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  &__card {
+    width: 22rem;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 1rem;
+    border-radius: 4px;
+    h4 {
+      width: 78%;
+      margin-top: 1rem;
+    }
+    svg {
+      margin-top: 1rem;
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+.blue {
+  background-color: #f0f0fc;
+  svg {
+    color: #bfc4fb;
+  }
+}
+.pink {
+  background-color: #fbeff1;
+  svg {
+    color: #fcbec3;
+  }
+}
+.green {
+  background-color: #effbf1;
+  svg {
+    color: #ccf1d2;
+  }
+}
+
+.mb {
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1160px) {
+  .mb {
+    margin-bottom: 1rem;
+  }
+}

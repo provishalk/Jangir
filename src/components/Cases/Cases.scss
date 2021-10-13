@@ -1,0 +1,79 @@
+.cases {
+  min-height: 100vh;
+  background-color: #f0f0fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  header {
+    h1,
+    h6 {
+      width: 40%;
+      margin: auto;
+      text-align: center;
+      padding-top: 1rem;
+    }
+    h1 {
+      padding-top: 0;
+    }
+  }
+  &__body {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    &__card {
+      min-width: 22rem;
+      background-color: white;
+      min-height: 21rem;
+      margin: 1rem;
+      padding: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+
+      &__userImg {
+        width: 4rem;
+        text-align: center;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+          object-fit: fill;
+        }
+      }
+      &__user {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        &__name {
+          margin-top: 8px;
+        }
+        &__about {
+          width: 20rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cases {
+    header {
+      h1,
+      h6 {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 1rem;
+      }
+      h1 {
+        padding-top: 3rem;
+      }
+    }
+    &__body{
+      flex-wrap: wrap;
+    }
+  }
+}
